@@ -22,6 +22,7 @@ pub trait ModuleCallbacks {
     );
     fn on_chan_open_confirm(index: usize, port_identifier: Vec<u8>, channel_identifier: H256);
     fn on_recv_packet(index: usize, packet: Packet);
+    fn on_recv_relay(index: usize, packet: Packet);
 }
 
 // fn conn_open_try() {}
